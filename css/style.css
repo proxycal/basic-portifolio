@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: black;
+    color:aliceblue;
+    
+}
+section{
+    padding : 40px;
+    border-bottom: 1px solid rgb(66, 64, 64);
+    padding-top: 80px;
+    scroll-margin-top: 80px;
+}
+h2,h3 {
+    color:rgb(19, 19, 188);
+}
+#about{
+    display: flex;
+    gap: 20px;
+    border: 2px solid rgb(62, 60, 60);
+    padding-bottom: 40px;
+    padding-top: 20px;
+    margin:20px;
+    border-radius: 10px;
+    flex-direction: column;
+    
+
+}
+#me {
+    border: 2px solid rgb(88, 81, 81);
+    padding-bottom: 40px;
+    padding-top: 20px;
+    margin:20px;
+    border-radius: 10px;
+    justify-content: center;
+
+
+}
+#contacts{
+    border: 2px solid rgb(62, 60, 60);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin:20px;
+    border-radius: 10px;
+
+}
+#projects{
+    border: 2px solid rgb(62, 60, 60);
+    padding-bottom: 40px;
+    padding-top: 20px;
+    margin:20px;
+    border-radius: 10px;
+
+}
+#skills{
+    border: 2px solid rgb(62, 60, 60);
+    padding-bottom: 40px;
+    padding-top: 40px;
+    margin:20px;
+    border-radius: 10px;
+
+
+}
+
+footer{
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    z-index: 1000;
+    
+}
+
+span{
+    display: block;
+}
+article{
+    border: 2px solid rgb(62, 60, 60);
+    padding-bottom: 40px;
+    padding-top: 20px;
+    margin:20px;
+    border-radius: 10px;
+    display: flex;
+  
+}
+.top{
+    position: fixed;
+    background-color: rgb(220, 220, 230);
+    width:100% ;
+   
+    
+
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap :20px;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.page{
+    height: 100vh;
+    scroll-snap-align: start;
+}
+.image{
+    display: flex;
+    justify-content: right;
+    
+}
+@media (max-width: 600px){
+    .image{
+        justify-content: center;
+
+    }
+    nav{
+        flex-direction: column;
+        gap: 20px;
+        scroll-margin-top: 80px;
+      
+    }
+     ul{
+        flex-direction: row;
+        gap :10px;
+    }
+     .top{
+        position: fixed;
+    }
+     .page{
+        height: 100vh;
+    }
+}

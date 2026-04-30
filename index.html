@@ -3,30 +3,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Utpreksha's Portfolio</title>
+    <link rel = "stylesheet" href="./css/style.css">
+
 </head>
 <body>
     <header>
+        <div class="top">
+        <nav>
+            <h2> Utpreksha Portfolio </h2>
+            <ul>
+                <li><a href="#me">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        
+        </nav>
+       </div>
 
     </header>
      <!-- main content  -->
     <main>
-        <section  id="me">
+        <section  id="me" class="page">
             <h2>Hi, I'm Utpreksha</h2>
             <p> ASPIRING JAVA BACKEND DEVELOPER </p>
             <button > View work </button>
+            <div class="image">
             <img src = "images\icon-7797704_640.png" alt="Utpreksha's photo" width="200px">
-            
+            </div>
 
 
         </section>
      <!-- About me  -->
-      <section id="about">
+      <section id="about" class="page">
         <h3>About Me </h3>
-        <p> I am a aspiring java backend developer to build scalable and efficient appilication </p>
-
+        <p> <span>I am a aspiring java backend developer to build scalable and efficient appilication </span> </p>
+      
       </section>
     <!-- skills -->
-     <section id="skills">
+     <section id="skills" class="page">
         <h3> Skills </h3>
         <ul>
             <li> Java </li>
@@ -38,23 +54,28 @@
       
     </section>
     <!-- projects -->
-     <section id ="projects">
+     <section id ="projects" class="page">
         <h3> Projects </h3>
      <article>
-        <h4> Project 1: Dom basic appilication </h4>
-        <p> The project give's the basic working of dom and how to manipulate the dom </p>
+        <h4> Project 1: INTERACTIVE DECISION INTERFACE  </h4>
+        <p> Designed a user interaction experiment demonstrating how adaptive interface changes influence
+         decision-making patterns  </p>
      </article>
      <article>
         <h4> Project 2: Emotion analysis using pyspark </h4>    
-        <p> basic emmotion analyzer using pyspark </p>
+        <p> basic emotion analyzer using pyspark </p>
      </article>
 
      </section>
     <!-- conatct -->
-     <section id ="contacts">
+     <section id ="contacts" class ="page">
+        
        <form>
+        <label > Name </label>
         <input type="text " placeholder="name ">
+        <label> Email </label>
         <input type="email" placeholder="your email">
+        <label>Message </label>
         <textarea placeholder="your msg"> </textarea>
         <button type="submit">send </button>
 
